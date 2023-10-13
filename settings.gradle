@@ -1,0 +1,5 @@
+rootProject.name = 'myspace'
+
+include 'shared'
+include 'assets'
+
