@@ -1,4 +1,4 @@
-package com.titzko.assets;
+package com.titzko.assets.controller;
 
 import com.titzko.service.HelloWorldService;
 import lombok.RequiredArgsConstructor;
@@ -18,5 +18,10 @@ public class AssetsController {
     public String getHelloWorldMsg(Model model) {
         model.addAttribute("msg", helloWorldService.getHelloWorldMsg());
         return "hello-world";
+    }
+
+    @GetMapping("/overview")
+    public String getOverview() {
+        return "overview";
     }
 }
